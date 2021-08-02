@@ -1,4 +1,8 @@
 <div id="container">
   <strong>{{ name }}</strong>
   <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <button (click)="navService.navigateForward('tabs/tab1')">Forward to tab1</button>
+  <button (click)="navService.navigateBackward('tabs/tab1')">Backward to tab1</button>
+  <button (click)="navService.navigateRoot('tabs/tab1')">Root to tab1</button>
+  <button (click)="navService.navigateForward('tabs/tab1/subtab2')">Forward to subtab2</button>
 </div>

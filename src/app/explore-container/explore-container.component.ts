@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {NavigationService} from "../services/navigation.service";
 
 @Component({
   selector: 'app-explore-container',
@@ -8,7 +9,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ExploreContainerComponent implements OnInit {
   @Input() name: string;
 
-  constructor() { }
+  constructor(
+    private navService: NavigationService,
+  ) { }
 
   ngOnInit() {}
 

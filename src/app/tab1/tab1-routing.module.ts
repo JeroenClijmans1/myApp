@@ -6,6 +6,20 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
+    children: [
+      {
+        path: 'subtab1',
+        loadChildren: () => import('../subtab1/subtab1.module').then(m => m.Subtab1PageModule)
+      },
+      {
+        path: 'subtab2',
+        loadChildren: () => import('../subtab2/subtab2.module').then(m => m.Subtab2PageModule)
+      },
+      {
+        path: '',
+        redirectTo: 'subtab1'
+      }
+    ]
   }
 ];
 

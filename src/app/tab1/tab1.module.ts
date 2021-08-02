@@ -6,6 +6,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
+import {CustomBackButtonComponentModule} from "../custom-back-button/custom-back-button.module";
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
+    CustomBackButtonComponentModule,
     Tab1PageRoutingModule
   ],
   declarations: [Tab1Page]

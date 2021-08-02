@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>subtab2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <button (click)="navService.push(navService.getCurrentUrl()); navService.navigateForward('/tabs/tab2')">
+    Forward to tab 2
+  </button>
+</ion-content>
